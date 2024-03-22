@@ -1,0 +1,17 @@
+import numpy as np
+from numpy import random
+
+# Generate a random array
+randnum = random.randint(100, size=(100))
+
+print("Original array:")
+print(randnum)
+print('the sorted array is below:')
+print(np.sort(randnum))
+
+randnum_copy = np.copy(randnum)
+
+randnum_copy = np.unique(randnum_copy)
+
+print('The array after removing duplicate entries:')
+print(randnum_copy)
